@@ -650,6 +650,7 @@ h2.resp-accordion {
 }
 .about-text {
 	float: left;
+	text-align: left;
 	width: 65%;
 	margin-top:3%; 
 }
