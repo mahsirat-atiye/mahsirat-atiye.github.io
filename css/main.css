@@ -409,6 +409,53 @@ footer {
   font-family: var(--mono);
 }
 
+/* ---------- Photo gallery --------------------------------- */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.photo-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: border-color .2s, transform .2s;
+  cursor: pointer;
+}
+
+.photo-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-card figcaption {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.photo-caption-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.photo-caption-sub {
+  font-size: 12px;
+  font-family: var(--mono);
+  color: var(--text-faint);
+}
+
 /* ---------- Scroll-to-top --------------------------------- */
 #back-to-top {
   position: fixed;
